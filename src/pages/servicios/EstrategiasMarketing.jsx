@@ -1,24 +1,34 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import { TrendingUp, Target, BarChart3, ArrowRight } from 'lucide-react'
+import { Container, Row, Col } from 'react-bootstrap'
 import { services } from '../../data/services'
+import ContactForm from '../../components/ui/ContactForm'
+import ServicesCarousel from '../../components/ui/ServicesCarousel'
 
 export default function EstrategiasMarketing() {
   const currentService = services[0]
-  const relatedServices = services.filter(s => s.id !== currentService.id).slice(0, 3)
+  const relatedServices = services.filter(s => s.id !== currentService.id).slice(0, 4)
 
   return (
     <>
       <section 
-        className="py-5 text-white"
         style={{
-          backgroundImage: `url(${currentService.image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
           position: 'relative',
-          minHeight: '400px'
+          height: '500px',
+          overflow: 'hidden'
         }}
       >
+        <div 
+          style={{
+            backgroundImage: 'url("/1.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 1
+          }}
+        />
         <div 
           style={{
             position: 'absolute',
@@ -26,132 +36,52 @@ export default function EstrategiasMarketing() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: 'linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.7))'
+            backgroundColor: 'rgba(6, 64, 255, 0.7)',
+            zIndex: 2
           }}
         />
-        <Container style={{ position: 'relative', zIndex: 1 }} className="h-100 d-flex align-items-center">
-          <Row>
-            <Col lg={8}>
-              <h1 className="display-4 fw-bold mb-3">{currentService.title}</h1>
-              <p className="lead">{currentService.description}</p>
+      </section>
+
+      <section style={{ paddingTop: '80px', paddingBottom: '30px', backgroundColor: '#fff' }}>
+        <Container>
+          <Row className="justify-content-center">
+            <Col lg={10}>
+              <div className="text-center">
+                <h2 className="fw-bold text-primary mb-4">
+                  ESTRATEGIAS DE MARKETING DIGITAL
+                </h2>
+                <p className="text-dark mb-4" style={{ fontSize: '1.1rem' }}>
+                  Implementamos la presencia online con campañas inteligentes y optimizadas.
+                </p>
+                <p className="text-primary fw-bold mb-0" style={{ fontSize: '1rem' }}>
+                  INCLUYE: Gestión de campañas publicitarias, publicidad en redes sociales y SEO.
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      <section className="py-5">
+      <section className="bg-white" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
         <Container>
-          <Row className="mb-5">
+          <Row className="justify-content-center mb-5">
             <Col lg={8}>
-              <h2 className="fw-bold mb-4">¿Qué incluye este servicio?</h2>
-              <p className="text-muted mb-4">
-                Nuestras estrategias de marketing están diseñadas específicamente para 
-                el sector salud, combinando técnicas probadas con innovación digital 
-                para maximizar tu presencia online y atraer más pacientes.
-              </p>
+              <div className="bg-light p-4 rounded text-center mb-4">
+                <h5 className="fw-bold text-dark mb-2">
+                  ¿Tu también estas listo para hacer crecer tu negocio?
+                </h5>
+                <p className="text-muted mb-2">Te regalamos una consultoría de 45 minutos</p>
+                <p className="text-primary fw-bold">¡TOTALMENTE GRATIS!</p>
+              </div>
 
-              <h4 className="fw-bold mb-3">INCLUYE:</h4>
-              <ul className="list-unstyled">
-                {currentService.features.map((feature, index) => (
-                  <li key={index} className="mb-2 d-flex align-items-start">
-                    <div className="bg-primary bg-opacity-10 rounded-circle p-2 me-3 mt-1">
-                      <ArrowRight size={16} className="text-primary" />
-                    </div>
-                    <span className="text-muted">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </Col>
-
-            <Col lg={4}>
-              <Card className="shadow-sm border-0 sticky-top" style={{ top: '100px' }}>
-                <Card.Body className="p-4">
-                  <h5 className="fw-bold mb-3">Solicita una consultoría</h5>
-                  <p className="text-muted small mb-4">
-                    ¿Listo para impulsar tu presencia digital? Contáctanos y te 
-                    asesoraremos sin compromiso.
-                  </p>
-                  <Button 
-                    as={Link} 
-                    to="/trabaja-con-nosotros" 
-                    variant="primary" 
-                    className="w-100"
-                  >
-                    Contactar ahora
-                  </Button>
-                </Card.Body>
-              </Card>
+              <ContactForm />
             </Col>
           </Row>
 
-          <Row className="mb-5">
+          <Row style={{ marginTop: '30px' }}>
             <Col>
-              <h3 className="fw-bold mb-4">Beneficios clave</h3>
-              <Row className="g-4">
-                <Col md={4}>
-                  <div className="text-center p-4">
-                    <div className="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-                      <TrendingUp size={40} className="text-primary" />
-                    </div>
-                    <h5 className="fw-bold mb-3">Aumenta tu visibilidad</h5>
-                    <p className="text-muted small">
-                      Llega a más pacientes potenciales a través de campañas optimizadas
-                    </p>
-                  </div>
-                </Col>
-                <Col md={4}>
-                  <div className="text-center p-4">
-                    <div className="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-                      <Target size={40} className="text-primary" />
-                    </div>
-                    <h5 className="fw-bold mb-3">Segmentación precisa</h5>
-                    <p className="text-muted small">
-                      Alcanza a tu público objetivo con mensajes personalizados
-                    </p>
-                  </div>
-                </Col>
-                <Col md={4}>
-                  <div className="text-center p-4">
-                    <div className="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-                      <BarChart3 size={40} className="text-primary" />
-                    </div>
-                    <h5 className="fw-bold mb-3">Resultados medibles</h5>
-                    <p className="text-muted small">
-                      Monitorea el rendimiento en tiempo real y optimiza continuamente
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col>
-              <h3 className="fw-bold mb-4">Otros servicios</h3>
-              <Row className="g-4">
-                {relatedServices.map(service => (
-                  <Col key={service.id} md={4}>
-                    <Card className="h-100 shadow-sm border-0">
-                      <Card.Img 
-                        variant="top" 
-                        src={service.image}
-                        style={{ height: '180px', objectFit: 'cover' }}
-                      />
-                      <Card.Body>
-                        <Card.Title className="fw-bold">{service.title}</Card.Title>
-                        <Button 
-                          as={Link} 
-                          to={service.link} 
-                          variant="outline-primary" 
-                          size="sm"
-                        >
-                          Ver más <ArrowRight size={14} className="ms-1" />
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
+              <h2 className="text-center text-primary" style={{ fontWeight: '700', fontSize: '2rem', marginBottom: '30px', fontFamily: 'Satoshi, sans-serif' }}>OTROS SERVICIOS</h2>
+              <ServicesCarousel services={services} currentServiceId={currentService.id} />
             </Col>
           </Row>
         </Container>

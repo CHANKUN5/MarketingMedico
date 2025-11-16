@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap');
 
 html {
   overflow-x: hidden;
@@ -12,12 +14,47 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
+}
+
+/* Tipografía Principal - Satoshi para títulos */
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 900;
+}
+
+h1, .display-1, .display-2, .display-3 {
+  font-weight: 900; /* Satoshi Black */
+}
+
+h2, h3 {
+  font-weight: 700; /* Satoshi Bold */
+}
+
+h4, h5, h6 {
+  font-weight: 500; /* Satoshi Medium */
+}
+
+/* Tipografía Secundaria - Inter para subtítulos */
+.lead, .subtitle, .section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800; /* Inter ExtraBold */
+  font-size: 18px;
+}
+
+/* Tipografía para párrafos - Roboto */
+p, .text-muted, .small, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Roboto Regular */
+}
+
+.fw-semibold, .fw-bold {
+  font-weight: 600; /* Roboto SemiBold */
 }
 
 a {

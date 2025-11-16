@@ -1,92 +1,90 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import Slider from 'react-slick'
-import TestimonialCard from '../../components/ui/TestimonialCard'
-import { testimonials } from '../../data/testimonials'
+import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Star } from 'lucide-react'
+import ContactForm from '../../components/ui/ContactForm'
 
 export default function Testimonios() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  }
+  const testimonials = [
+    {
+      id: 1,
+      image: '/reseña 1.png',
+      stars: 4,
+      text: 'Gracias a Marketing Médico logramos llegar a más pacientes y mejorar nuestra presencia digital. El equipo siempre está atento a nuestras necesidades.'
+    },
+    {
+      id: 2,
+      image: '/reseña 2.png',
+      stars: 4,
+      text: 'Gracias a Marketing Médico por su excelente trabajo. Su apoyo ha sido clave para que nuestra clínica dental crezca y llegue a más pacientes. Muy buena atención y resultados visibles.'
+    }
+  ]
 
   return (
     <>
-      <section className="py-5 bg-primary text-white">
-        <Container>
-          <Row className="text-center">
-            <Col>
-              <h1 className="fw-bold mb-3">Testimonios</h1>
-              <p className="lead">Lo que dicen nuestros clientes</p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
       <section className="py-5">
         <Container>
-          <Row className="mb-4">
-            <Col>
-              <h2 className="text-center fw-bold mb-3">
-                ¿QUÉ SE DICE DE <span className="text-primary">NUESTROS SER VICIOS?</span>
-              </h2>
-            </Col>
-          </Row>
-
-          <Slider {...settings}>
+          <Row className="g-4 mb-5">
             {testimonials.map(testimonial => (
-              <div key={testimonial.id} className="px-2">
-                <TestimonialCard testimonial={testimonial} />
-              </div>
-            ))}
-          </Slider>
-        </Container>
-      </section>
+              <Col key={testimonial.id} md={6}>
+                <Card 
+                  className="h-100 border-0 shadow-lg"
+                  style={{ 
+                    backgroundColor: '#0640FF',
+                    borderRadius: '20px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <Card.Body className="p-4 text-center text-white">
+                    <div className="mb-3">
+                      <img 
+                        src={testimonial.image}
+                        alt="Cliente"
+                        style={{
+                          width: '100px',
+                          height: '100px',
+                          borderRadius: '50%',
+                          objectFit: 'cover',
+                          border: '4px solid white'
+                        }}
+                      />
+                    </div>
+                    
+                    <div className="mb-3">
+                      {[...Array(5)].map((_, index) => (
+                        <Star
+                          key={index}
+                          size={24}
+                          fill={index < testimonial.stars ? '#FFD700' : 'none'}
+                          stroke={index < testimonial.stars ? '#FFD700' : 'white'}
+                          style={{ marginRight: '4px' }}
+                        />
+                      ))}
+                    </div>
 
-      <section className="py-5 bg-light">
-        <Container>
-          <Row className="text-center mb-4">
-            <Col>
-              <h2 className="fw-bold">CONOCE A NUESTROS PRACTICANTES</h2>
-            </Col>
-          </Row>
-
-          <Row className="g-4 justify-content-center">
-            {[1, 2, 3, 4].map(i => (
-              <Col key={i} sm={6} md={3}>
-                <div className="text-center">
-                  <img
-                    src={`https://randomuser.me/api/portraits/${i % 2 === 0 ? 'women' : 'men'}/${20 + i}.jpg`}
-                    alt={`Practicante ${i}`}
-                    className="rounded-circle mb-3 shadow"
-                    width="120"
-                    height="120"
-                    style={{ objectFit: 'cover' }}
-                  />
-                  <h6 className="fw-bold">Puesto dentro de la empresa</h6>
-                  <p className="text-muted small">Años en la empresa</p>
-                  <p className="text-muted small fst-italic">"Comentario de su experiencia"</p>
-                </div>
+                    <p className="mb-0" style={{ fontSize: '16px', lineHeight: '1.6' }}>
+                      "{testimonial.text}"
+                    </p>
+                  </Card.Body>
+                </Card>
               </Col>
             ))}
+          </Row>
+
+          <Row className="justify-content-center mb-5">
+            <Col lg={8}>
+              <div className="bg-light p-5 rounded text-center">
+                <h2 className="fw-bold mb-3">
+                  ¿Tu también estas listo para hacer crecer tu negocio?
+                </h2>
+                <p className="text-muted mb-2">Te regalamos una consultoría de 45 minutos</p>
+                <p className="text-primary fw-bold">¡TOTALMENTE GRATIS!</p>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col lg={6}>
+              <ContactForm />
+            </Col>
           </Row>
         </Container>
       </section>

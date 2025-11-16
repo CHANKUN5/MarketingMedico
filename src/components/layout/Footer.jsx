@@ -1,7 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Facebook, Instagram } from 'lucide-react'
-import { FaTiktok } from 'react-icons/fa'
 import { services } from '../../data/services'
 import { socialLinks } from '../../data/socialLinks'
 
@@ -30,7 +29,10 @@ export default function Footer() {
             <h5 className="text-white mb-3">Nosotros</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <Link to="/nosotros" className="text-white-50 text-decoration-none">
+                <Link 
+                  to="/nosotros" 
+                  className="text-white-50 text-decoration-none footer-link"
+                >
                   Ir a Nosotros
                 </Link>
               </li>
@@ -41,23 +43,24 @@ export default function Footer() {
             <h5 className="text-white mb-3">Reseña</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <Link to="/resenas/resena-1" className="text-white-50 text-decoration-none">
-                  Reseña 1
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/resenas/resena-2" className="text-white-50 text-decoration-none">
-                  Reseña 2
+                <Link 
+                  to="/testimonios" 
+                  className="text-white-50 text-decoration-none footer-link"
+                >
+                  Ver Testimonios
                 </Link>
               </li>
             </ul>
           </Col>
 
-          <Col lg={2} md={6} className="mb-4 d-none d-lg-block">
+          <Col lg={2} md={6} className="mb-4 d-none d-lg-block" style={{ paddingRight: '60px' }}>
             <h5 className="text-white mb-3">Trabaja con nosotros</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <Link to="/trabaja-con-nosotros" className="text-white-50 text-decoration-none">
+                <Link 
+                  to="/trabaja-con-nosotros" 
+                  className="text-white-50 text-decoration-none footer-link"
+                >
                   Trabaja con nosotros
                 </Link>
               </li>
@@ -71,7 +74,7 @@ export default function Footer() {
                 <li key={service.id} className="mb-2">
                   <Link 
                     to={service.link} 
-                    className="text-white-50 text-decoration-none small"
+                    className="text-white-50 text-decoration-none small footer-link"
                   >
                     {service.title}
                   </Link>
@@ -91,10 +94,10 @@ export default function Footer() {
                 className="text-white social-icon-link"
                 style={{ transition: 'all 0.3s ease', display: 'inline-flex' }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = '#0d6efd'
+                  e.currentTarget.style.color = '#0640FF'
                   e.currentTarget.style.transform = 'scale(1.15)'
                   const svg = e.currentTarget.querySelector('svg')
-                  if (svg) svg.style.color = '#0d6efd'
+                  if (svg) svg.style.color = '#0640FF'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.color = 'white'
@@ -112,10 +115,10 @@ export default function Footer() {
                 className="text-white social-icon-link"
                 style={{ transition: 'all 0.3s ease', display: 'inline-flex' }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = '#0d6efd'
+                  e.currentTarget.style.color = '#0640FF'
                   e.currentTarget.style.transform = 'scale(1.15)'
                   const svg = e.currentTarget.querySelector('svg')
-                  if (svg) svg.style.color = '#0d6efd'
+                  if (svg) svg.style.color = '#0640FF'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.color = 'white'
@@ -125,27 +128,6 @@ export default function Footer() {
                 }}
               >
                 <Instagram size={24} style={{ transition: 'all 0.3s ease' }} />
-              </a>
-              <a 
-                href={socialLinks.tiktok} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white social-icon-link"
-                style={{ transition: 'all 0.3s ease', display: 'inline-flex' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = '#0d6efd'
-                  e.currentTarget.style.transform = 'scale(1.15)'
-                  const svg = e.currentTarget.querySelector('svg')
-                  if (svg) svg.style.color = '#0d6efd'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'white'
-                  e.currentTarget.style.transform = 'scale(1)'
-                  const svg = e.currentTarget.querySelector('svg')
-                  if (svg) svg.style.color = 'white'
-                }}
-              >
-                <FaTiktok size={24} style={{ transition: 'all 0.3s ease' }} />
               </a>
             </div>
           </Col>

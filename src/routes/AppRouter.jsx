@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from '../components/ScrollToTop'
 import Layout from '../components/layout/Layout'
 import Home from '../pages/Home/Home'
 import Nosotros from '../pages/Nosotros/Nosotros'
@@ -7,6 +8,8 @@ import Resenas from '../pages/Resenas/Resenas'
 import Resena1 from '../pages/Resenas/Resena1'
 import Resena2 from '../pages/Resenas/Resena2'
 import TrabajaConNosotros from '../pages/TrabajaConNosotros/TrabajaConNosotros'
+import DisenoGrafico from '../pages/Vacantes/DisenoGrafico'
+import DesarrolloSoftware from '../pages/Vacantes/DesarrolloSoftware'
 import EstrategiasMarketing from '../pages/servicios/EstrategiasMarketing'
 import GestionCRMERP from '../pages/servicios/GestionCRMERP'
 import AutomatizacionMarketing from '../pages/servicios/AutomatizacionMarketing'
@@ -18,6 +21,7 @@ import MarketingContenidos from '../pages/servicios/MarketingContenidos'
 export default function AppRouter() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -27,6 +31,8 @@ export default function AppRouter() {
           <Route path="resenas/resena-1" element={<Resena1 />} />
           <Route path="resenas/resena-2" element={<Resena2 />} />
           <Route path="trabaja-con-nosotros" element={<TrabajaConNosotros />} />
+          <Route path="vacantes/diseno-grafico" element={<DisenoGrafico />} />
+          <Route path="vacantes/desarrollo-software" element={<DesarrolloSoftware />} />
           <Route path="servicios/estrategias-marketing" element={<EstrategiasMarketing />} />
           <Route path="servicios/gestion-crm-erp" element={<GestionCRMERP />} />
           <Route path="servicios/automatizacion-marketing" element={<AutomatizacionMarketing />} />
