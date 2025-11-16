@@ -15,21 +15,29 @@ export default function ServicesCarousel({ services, currentServiceId }) {
     autoplaySpeed: 3000,
     arrows: false,
     centerMode: false,
+    variableWidth: false,
     responsive: [
       {
         breakpoint: 1200,
-        settings: { slidesToShow: 3, centerMode: false }
+        settings: { 
+          slidesToShow: 3, 
+          centerMode: false
+        }
       },
       {
         breakpoint: 992,
-        settings: { slidesToShow: 2, centerMode: false }
+        settings: { 
+          slidesToShow: 2, 
+          centerMode: false
+        }
       },
       {
         breakpoint: 768,
         settings: { 
           slidesToShow: 1, 
           centerMode: true,
-          centerPadding: '40px'
+          centerPadding: '60px',
+          infinite: true
         }
       }
     ]
@@ -39,7 +47,7 @@ export default function ServicesCarousel({ services, currentServiceId }) {
 
   return (
     <div style={{ 
-      padding: '40px 20px',
+      padding: '40px 0',
       maxWidth: '1400px',
       margin: '0 auto',
       overflow: 'hidden'
@@ -65,19 +73,56 @@ export default function ServicesCarousel({ services, currentServiceId }) {
             height: 400px !important;
             display: flex;
             flex-direction: column;
+            width: 100% !important;
           }
           
-          @media (max-width: 768px) {
-            .services-carousel .slick-slide {
-              padding: 0 20px;
+          @media screen and (max-width: 768px) {
+            .services-carousel {
+              padding: 0 !important;
+              margin: 0 !important;
+            }
+            .services-carousel .slick-slider {
+              margin: 0 !important;
             }
             .services-carousel .slick-list {
-              margin: 0 -20px;
-              padding: 0 30px !important;
+              margin: 0 !important;
+              padding: 0 !important;
+              overflow: visible !important;
+            }
+            .services-carousel .slick-slide {
+              padding: 0 10px !important;
+              width: calc(100vw - 120px) !important;
+              min-width: 280px !important;
+              max-width: 350px !important;
+            }
+            .services-carousel .slick-track {
+              display: flex !important;
+              align-items: stretch !important;
+            }
+            .services-carousel .slick-slide > div {
+              display: flex !important;
+              height: 100% !important;
+              width: 100% !important;
             }
             .services-carousel .slick-slide .card {
-              max-width: 85%;
-              margin: 0 auto;
+              width: 100% !important;
+              max-width: 100% !important;
+              height: 450px !important;
+              margin: 0 auto !important;
+              flex-shrink: 0 !important;
+            }
+            .services-carousel .slick-center .card {
+              box-shadow: 0 6px 25px rgba(6, 64, 255, 0.25) !important;
+              transform: scale(1.02) !important;
+            }
+            .services-carousel .slick-slide h5 {
+              font-size: 1.15rem !important;
+            }
+            .services-carousel .slick-slide ul {
+              font-size: 0.82rem !important;
+            }
+            .services-carousel .slick-slide .card img {
+              height: 150px !important;
             }
           }
         `}
