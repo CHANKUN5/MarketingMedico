@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap');
 
+/* Sobrescribir colores primarios de Bootstrap */
+:root {
+  --bs-primary: #0640FF;
+  --bs-primary-rgb: 6, 64, 255;
+  --bs-primary-dark: #0540DD;
+}
+
 html {
   overflow-x: hidden;
   width: 100%;
@@ -65,4 +72,39 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Sobrescribir clases de Bootstrap con color primario personalizado */
+.text-primary {
+  color: #0640FF !important;
+}
+
+.bg-primary {
+  background-color: #0640FF !important;
+}
+
+.btn-primary {
+  background-color: #0640FF !important;
+  border-color: #0640FF !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #0540DD !important;
+  border-color: #0540DD !important;
+}
+
+.border-primary {
+  border-color: #0640FF !important;
+}
+
+.badge.bg-primary {
+  background-color: #0640FF !important;
+}
+
+.alert-primary {
+  background-color: rgba(6, 64, 255, 0.1) !important;
+  border-color: #0640FF !important;
+  color: #0640FF !important;
 }

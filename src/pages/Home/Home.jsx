@@ -226,10 +226,10 @@ export default function Home() {
           <Row className="align-items-center">
             <Col lg={8}>
               <h3 className="fw-bold mb-3">
-                ¿Tu también estas listo para hacer crecer tu negocio?
+                ¿Estás tú también listo para unirte a nuestro equipo?
               </h3>
               <p className="mb-0">
-                Te regalamos una consultoría de 45 minutos ¡TOTALMENTE GRATIS!
+                Te redirigimos a la postulación para que seas parte de este asombroso equipo
               </p>
             </Col>
             <Col lg={4} className="text-lg-end mt-3 mt-lg-0">
@@ -240,7 +240,7 @@ export default function Home() {
                 size="lg"
                 className="fw-bold"
               >
-                Más información <ArrowRight className="ms-2" size={20} />
+                Postular ahora <ArrowRight className="ms-2" size={20} />
               </Button>
             </Col>
           </Row>
