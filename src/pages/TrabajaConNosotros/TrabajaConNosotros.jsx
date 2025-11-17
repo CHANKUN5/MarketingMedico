@@ -290,25 +290,74 @@ export default function TrabajaConNosotros() {
             </Col>
           </Row>
           <Row className="g-4">
-            {[1, 2, 3, 4].map((num) => (
-              <Col key={num} md={6}>
-                <Card className="border-0 shadow-sm" style={{ borderRadius: '20px', backgroundColor: '#F0F4FF' }}>
-                  <Card.Body className="d-flex align-items-center p-4">
-                    <img 
-                      src={num === 1 ? '/testimonio1.png' : num === 2 ? '/testimonio 2.png' : num === 3 ? '/testimonio 3.png' : '/testimonio 4.png'}
-                      alt="Practicante" 
-                      style={{ width: '90px', height: '90px', borderRadius: '50%', objectFit: 'cover' }}
-                      className="me-4"
-                    />
-                    <div style={{ flex: 1 }}>
-                      <h5 className="fw-bold mb-2" style={{ color: '#000' }}>Puesto dentro de la empresa</h5>
-                      <p className="text-muted mb-1" style={{ fontSize: '0.95rem' }}>Años en la empresa</p>
-                      <p className="text-muted mb-0" style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>"Comentario de su experiencia"</p>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
+            <Col md={6}>
+              <Card className="border-0 shadow-sm" style={{ borderRadius: '20px', backgroundColor: '#F0F4FF' }}>
+                <Card.Body className="d-flex align-items-center p-4">
+                  <img 
+                    src="/testimonio1.png"
+                    alt="Practicante" 
+                    style={{ width: '90px', height: '90px', borderRadius: '50%', objectFit: 'cover' }}
+                    className="me-4"
+                  />
+                  <div style={{ flex: 1 }}>
+                    <h5 className="fw-bold mb-2" style={{ color: '#000' }}>Diseñador Gráfico Digital</h5>
+                    <p className="text-muted mb-1" style={{ fontSize: '0.95rem' }}>8 meses en la empresa</p>
+                    <p className="text-muted mb-0" style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>"Ambiente creativo y lleno de buenas experiencias."</p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="border-0 shadow-sm" style={{ borderRadius: '20px', backgroundColor: '#F0F4FF' }}>
+                <Card.Body className="d-flex align-items-center p-4">
+                  <img 
+                    src="/testimonio 2.png"
+                    alt="Practicante" 
+                    style={{ width: '90px', height: '90px', borderRadius: '50%', objectFit: 'cover' }}
+                    className="me-4"
+                  />
+                  <div style={{ flex: 1 }}>
+                    <h5 className="fw-bold mb-2" style={{ color: '#000' }}>Diseñadora Gráfica Digital</h5>
+                    <p className="text-muted mb-1" style={{ fontSize: '0.95rem' }}>1 año en la empresa</p>
+                    <p className="text-muted mb-0" style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>" Un lugar donde aprendí edición y maquetación web en un buen ambiente."</p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="border-0 shadow-sm" style={{ borderRadius: '20px', backgroundColor: '#F0F4FF' }}>
+                <Card.Body className="d-flex align-items-center p-4">
+                  <img 
+                    src="/testimonio 3.png"
+                    alt="Practicante" 
+                    style={{ width: '90px', height: '90px', borderRadius: '50%', objectFit: 'cover' }}
+                    className="me-4"
+                  />
+                  <div style={{ flex: 1 }}>
+                    <h5 className="fw-bold mb-2" style={{ color: '#000' }}>Programadora</h5>
+                    <p className="text-muted mb-1" style={{ fontSize: '0.95rem' }}>1 año en la empresa</p>
+                    <p className="text-muted mb-0" style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>"Un lugar donde fortalecí mis habilidades de programación y trabajo en equipo."</p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className="border-0 shadow-sm" style={{ borderRadius: '20px', backgroundColor: '#F0F4FF' }}>
+                <Card.Body className="d-flex align-items-center p-4">
+                  <img 
+                    src="/testimonio 4.png"
+                    alt="Practicante" 
+                    style={{ width: '90px', height: '90px', borderRadius: '50%', objectFit: 'cover' }}
+                    className="me-4"
+                  />
+                  <div style={{ flex: 1 }}>
+                    <h5 className="fw-bold mb-2" style={{ color: '#000' }}>Programadora</h5>
+                    <p className="text-muted mb-1" style={{ fontSize: '0.95rem' }}>1 mes en la empresa</p>
+                    <p className="text-muted mb-0" style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>"Excelente lugar para aprender y mejorar en programación."</p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </section>
