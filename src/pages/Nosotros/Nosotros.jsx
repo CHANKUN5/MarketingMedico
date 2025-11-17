@@ -43,10 +43,10 @@ export default function Nosotros() {
               <Card className="h-100 border shadow-sm" style={{ borderRadius: '15px', borderColor: '#e0e0e0' }}>
                 <Card.Body className="text-center p-4">
                   <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#FFD4D4', borderRadius: '12px' }}>
-                    <Users size={40} style={{ color: '#EF4444' }} />
+                    <Users size={40} style={{ color: '#FF0006' }} />
                   </div>
                   <div className="mb-3">
-                    <span className="badge" style={{ backgroundColor: '#FFD4D4', color: '#EF4444', fontSize: '0.9rem', padding: '8px 16px' }}>
+                    <span className="badge" style={{ backgroundColor: '#FFD4D4', color: '#FF0006', fontSize: '0.9rem', padding: '8px 16px' }}>
                       Nuestra misión
                     </span>
                   </div>
@@ -60,10 +60,10 @@ export default function Nosotros() {
               <Card className="h-100 border shadow-sm" style={{ borderRadius: '15px', borderColor: '#e0e0e0' }}>
                 <Card.Body className="text-center p-4">
                   <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#FFD4D4', borderRadius: '12px' }}>
-                    <Award size={40} style={{ color: '#EF4444' }} />
+                    <Award size={40} style={{ color: '#FF0006' }} />
                   </div>
                   <div className="mb-3">
-                    <span className="badge" style={{ backgroundColor: '#FFD4D4', color: '#EF4444', fontSize: '0.9rem', padding: '8px 16px' }}>
+                    <span className="badge" style={{ backgroundColor: '#FFD4D4', color: '#FF0006', fontSize: '0.9rem', padding: '8px 16px' }}>
                       Nuestra visión
                     </span>
                   </div>
@@ -94,7 +94,7 @@ export default function Nosotros() {
             <Col md={4}>
               <div className="text-center">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Users size={48} style={{ color: '#7C3AED' }} />
+                  <Users size={48} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Compromiso</h5>
                 <p className="text-muted">
@@ -105,7 +105,7 @@ export default function Nosotros() {
             <Col md={4}>
               <div className="text-center">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Award size={48} style={{ color: '#7C3AED' }} />
+                  <Award size={48} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Excelencia</h5>
                 <p className="text-muted">
@@ -116,7 +116,7 @@ export default function Nosotros() {
             <Col md={4}>
               <div className="text-center">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Heart size={48} style={{ color: '#7C3AED' }} />
+                  <Heart size={48} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Empatía</h5>
                 <p className="text-muted">
@@ -130,7 +130,7 @@ export default function Nosotros() {
             <Col md={4}>
               <div className="text-center">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Lightbulb size={48} style={{ color: '#7C3AED' }} />
+                  <Lightbulb size={48} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Innovación</h5>
                 <p className="text-muted">
@@ -141,7 +141,7 @@ export default function Nosotros() {
             <Col md={4}>
               <div className="text-center">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Target size={48} style={{ color: '#7C3AED' }} />
+                  <Target size={48} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Ética</h5>
                 <p className="text-muted">
@@ -152,7 +152,7 @@ export default function Nosotros() {
             <Col md={4}>
               <div className="text-center">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Briefcase size={48} style={{ color: '#7C3AED' }} />
+                  <Briefcase size={48} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Innovación</h5>
                 <p className="text-muted">

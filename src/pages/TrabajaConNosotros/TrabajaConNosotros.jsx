@@ -215,13 +215,13 @@ export default function TrabajaConNosotros() {
             <Col md={6}>
               <Card className="h-100 border-0 shadow-sm bg-white" style={{ borderRadius: '15px' }}>
                 <Card.Body className="text-center p-4">
-                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#C4F4E0', borderRadius: '12px' }}>
+                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#D4FFE0', borderRadius: '12px' }}>
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="12" cy="12" r="10" stroke="#10B981" strokeWidth="2"/>
-                      <path d="M12 6V12L16 14" stroke="#10B981" strokeWidth="2" strokeLinecap="round"/>
+                      <circle cx="12" cy="12" r="10" stroke="#00D829" strokeWidth="2"/>
+                      <path d="M12 6V12L16 14" stroke="#00D829" strokeWidth="2" strokeLinecap="round"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold mb-3" style={{ color: '#10B981' }}>Flexibilidad de Horario</h5>
+                  <h5 className="fw-bold mb-3" style={{ color: '#00D829' }}>Flexibilidad de Horario</h5>
                   <p className="text-muted">
                     Entendemos que estás en formación. Ajustamos los horarios para que puedas cumplir con tus estudios y seguir aprendiendo sin presiones.
                   </p>
@@ -231,13 +231,13 @@ export default function TrabajaConNosotros() {
             <Col md={6}>
               <Card className="h-100 border-0 shadow-sm bg-white" style={{ borderRadius: '15px' }}>
                 <Card.Body className="text-center p-4">
-                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#C4F4E0', borderRadius: '12px' }}>
+                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#D4FFE0', borderRadius: '12px' }}>
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="3" y="3" width="18" height="18" rx="2" stroke="#10B981" strokeWidth="2"/>
-                      <path d="M9 11L11 13L15 9" stroke="#10B981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <rect x="3" y="3" width="18" height="18" rx="2" stroke="#00D829" strokeWidth="2"/>
+                      <path d="M9 11L11 13L15 9" stroke="#00D829" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold mb-3" style={{ color: '#10B981' }}>Prácticas Certificadas</h5>
+                  <h5 className="fw-bold mb-3" style={{ color: '#00D829' }}>Prácticas Certificadas</h5>
                   <p className="text-muted">
                     Obtén una constancia oficial que respalde tu experiencia profesional y potencie tu perfil laboral.
                   </p>
@@ -247,12 +247,12 @@ export default function TrabajaConNosotros() {
             <Col md={6}>
               <Card className="h-100 border-0 shadow-sm bg-white" style={{ borderRadius: '15px' }}>
                 <Card.Body className="text-center p-4">
-                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#C4F4E0', borderRadius: '12px' }}>
+                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#D4FFE0', borderRadius: '12px' }}>
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#10B981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#00D829" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold mb-3" style={{ color: '#10B981' }}>Capacitaciones Continuas</h5>
+                  <h5 className="fw-bold mb-3" style={{ color: '#00D829' }}>Capacitaciones Continuas</h5>
                   <p className="text-muted">
                     Obtén una constancia oficial que respalde tu experiencia profesional y potencie tu perfil laboral.
                   </p>
@@ -262,14 +262,14 @@ export default function TrabajaConNosotros() {
             <Col md={6}>
               <Card className="h-100 border-0 shadow-sm bg-white" style={{ borderRadius: '15px' }}>
                 <Card.Body className="text-center p-4">
-                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#C4F4E0', borderRadius: '12px' }}>
+                  <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#D4FFE0', borderRadius: '12px' }}>
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="2" y="7" width="20" height="14" rx="2" stroke="#10B981" strokeWidth="2"/>
-                      <path d="M8 3V7M16 3V7" stroke="#10B981" strokeWidth="2" strokeLinecap="round"/>
-                      <path d="M2 11H22" stroke="#10B981" strokeWidth="2"/>
+                      <rect x="2" y="7" width="20" height="14" rx="2" stroke="#00D829" strokeWidth="2"/>
+                      <path d="M8 3V7M16 3V7" stroke="#00D829" strokeWidth="2" strokeLinecap="round"/>
+                      <path d="M2 11H22" stroke="#00D829" strokeWidth="2"/>
                     </svg>
                   </div>
-                  <h5 className="fw-bold mb-3" style={{ color: '#10B981' }}>Trabajo 100% Remoto</h5>
+                  <h5 className="fw-bold mb-3" style={{ color: '#00D829' }}>Trabajo 100% Remoto</h5>
                   <p className="text-muted">
                     Realiza tus prácticas desde casa con todas las herramientas necesarias para un entorno profesional y colaborativo.
                   </p>

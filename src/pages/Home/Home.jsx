@@ -28,7 +28,7 @@ export default function Home() {
             <Col md={4}>
               <div className="text-center p-4">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#E8D4FF', borderRadius: '12px' }}>
-                  <Users size={40} style={{ color: '#7C3AED' }} />
+                  <Users size={40} style={{ color: '#6C05FF' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Compromiso y ética</h5>
                 <p className="text-muted">
@@ -39,7 +39,7 @@ export default function Home() {
             <Col md={4}>
               <div className="text-center p-4">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#C4F4E0', borderRadius: '12px' }}>
-                  <Award size={40} style={{ color: '#10B981' }} />
+                  <Award size={40} style={{ color: '#00D829' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Innovación y excelencia</h5>
                 <p className="text-muted">
@@ -50,7 +50,7 @@ export default function Home() {
             <Col md={4}>
               <div className="text-center p-4">
                 <div className="d-inline-flex p-3 mb-3" style={{ backgroundColor: '#FFD4D4', borderRadius: '12px' }}>
-                  <Target size={40} style={{ color: '#EF4444' }} />
+                  <Target size={40} style={{ color: '#FF0006' }} />
                 </div>
                 <h5 className="fw-bold mb-3" style={{ color: '#000' }}>Empatía</h5>
                 <p className="text-muted">
