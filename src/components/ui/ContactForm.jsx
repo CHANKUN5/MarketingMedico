@@ -31,9 +31,7 @@ export default function ContactForm() {
       newErrors.email = 'El correo no es válido'
     }
 
-    if (!formData.link.trim()) {
-      newErrors.link = 'El link es requerido'
-    }
+    // El campo link es opcional, no se valida
 
     if (!formData.mensaje.trim()) {
       newErrors.mensaje = 'El mensaje es requerido'
@@ -139,19 +137,15 @@ export default function ContactForm() {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label className="text-white fw-bold">Link de tu página web/red social</Form.Label>
+              <Form.Label className="text-white fw-bold">
+                Link de tu página web/red social <span className="fw-normal">(opcional)</span>
+              </Form.Label>
               <Form.Control 
                 type="text" 
                 name="link"
                 value={formData.link}
                 onChange={handleChange}
-                className={errors.link ? 'is-invalid' : ''}
               />
-              {errors.link && (
-                <div className="text-white mt-1 small">
-                  ⚠️ {errors.link}
-                </div>
-              )}
             </Form.Group>
 
             <Form.Group className="mb-4">
