@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import ScrollToTop from '../components/ScrollToTop'
 import Layout from '../components/layout/Layout'
 import Home from '../pages/Home/Home'
@@ -17,10 +18,23 @@ import DesarrolloWeb from '../pages/servicios/DesarrolloWeb'
 import AnalisisDatos from '../pages/servicios/AnalisisDatos'
 import Consultoria from '../pages/servicios/Consultoria'
 import MarketingContenidos from '../pages/servicios/MarketingContenidos'
+import { pageview } from '../utils/ga'
+
+function AnalyticsTracker() {
+  const location = useLocation()
+
+  useEffect(() => {
+    // Enviar el pageview a GA cuando cambie la ruta
+    pageview(location.pathname + location.search)
+  }, [location])
+
+  return null
+}
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
+      <AnalyticsTracker />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
