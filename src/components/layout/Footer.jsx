@@ -49,7 +49,7 @@ export default function Footer() {
                     to="/testimonios" 
                     className="text-white-50 text-decoration-none footer-link"
                   >
-                    Ver Testimonios
+                    Ver Reseñas
                   </Link>
                 </li>
               </ul>
@@ -130,7 +130,7 @@ export default function Footer() {
                   to="/testimonios" 
                   className="text-white-50 text-decoration-none footer-link"
                 >
-                  Ver Testimonios
+                  Ver Reseñas
                 </Link>
               </li>
             </ul>

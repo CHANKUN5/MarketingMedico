@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 const slides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&q=80',
+    image: '/Home.jpeg',
     title: 'Transformamos tu Presencia Digital',
     subtitle: 'Marketing especializado para el sector salud'
   },

@@ -20,6 +20,42 @@ export default function Testimonios() {
 
   return (
     <>
+      <section 
+        style={{
+          backgroundImage: 'url(/Testimonios.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          position: 'relative',
+          height: '450px'
+        }}
+      >
+        <div 
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.6)'
+          }}
+        />
+        <div 
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 3,
+            textAlign: 'center',
+            color: 'white',
+            width: '90%',
+            maxWidth: '800px'
+          }}
+        >
+          <h1 className="display-5 fw-bold mb-3">Lo que dicen nuestros clientes</h1>
+        </div>
+      </section>
+
       <section className="py-5">
         <Container>
           <Row className="g-4 mb-5">

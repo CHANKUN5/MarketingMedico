@@ -57,7 +57,16 @@ export default function Header() {
               className="nav-item-custom"
               style={{ fontWeight: '400' }}
             >
-              Testimonios
+              Reseñas
+            </Nav.Link>
+
+            <Nav.Link 
+              as={NavLink} 
+              to="/trabaja-con-nosotros" 
+              className="nav-item-custom"
+              style={{ fontWeight: '400' }}
+            >
+              Reclutamiento
             </Nav.Link>
 
             <NavDropdown 
@@ -76,15 +85,6 @@ export default function Header() {
                 </NavDropdown.Item>
               ))}
             </NavDropdown>
-
-            <Nav.Link 
-              as={NavLink} 
-              to="/trabaja-con-nosotros" 
-              className="nav-item-custom"
-              style={{ fontWeight: '400' }}
-            >
-              Reclutamiento
-            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -185,7 +185,25 @@ export default function Header() {
                   display: 'block'
                 }}
               >
-                Testimonios
+                Reseñas
+              </NavLink>
+
+              <NavLink 
+                to="/trabaja-con-nosotros" 
+                className="mobile-nav-link" 
+                onClick={closeMenu}
+                style={{
+                  color: 'white',
+                  textDecoration: 'none',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  padding: '1rem 0.75rem',
+                  textAlign: 'center',
+                  borderBottom: '1px solid rgba(255, 255, 255, 0.15)',
+                  display: 'block'
+                }}
+              >
+                Reclutamiento
               </NavLink>
 
               <div 
@@ -266,24 +284,6 @@ export default function Header() {
                   </div>
                 )}
               </div>
-
-              <NavLink 
-                to="/trabaja-con-nosotros" 
-                className="mobile-nav-link" 
-                onClick={closeMenu}
-                style={{
-                  color: 'white',
-                  textDecoration: 'none',
-                  fontSize: '1rem',
-                  fontWeight: '600',
-                  padding: '1rem 0.75rem',
-                  textAlign: 'center',
-                  borderBottom: '1px solid rgba(255, 255, 255, 0.15)',
-                  display: 'block'
-                }}
-              >
-                Reclutamiento
-              </NavLink>
             </nav>
           </div>
         </>

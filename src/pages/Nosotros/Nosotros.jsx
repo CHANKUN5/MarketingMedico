@@ -6,7 +6,7 @@ export default function Nosotros() {
     <>
       <section 
         style={{
-          backgroundImage: 'url(/agendar.jpeg)',
+          backgroundImage: 'url(/Nosotros.jpeg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
@@ -20,7 +20,7 @@ export default function Nosotros() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: 'rgba(6, 64, 255, 0.7)'
+            background: 'rgba(0, 0, 0, 0.6)'
           }}
         />
       </section>

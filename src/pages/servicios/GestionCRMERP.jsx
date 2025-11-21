@@ -35,10 +35,28 @@ export default function GestionCRMERP() {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(6, 64, 255, 0.7)',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
             zIndex: 2
           }}
         />
+        <div 
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: 'calc(50% - 4px)',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 3,
+            textAlign: 'center',
+            color: 'white',
+            width: '90%',
+            maxWidth: '800px'
+          }}
+        >
+          <h1 className="display-4 fw-bold mb-3">
+            Organiza y<br />
+            Optimiza tu Clínica
+          </h1>
+        </div>
       </section>
 
       <section style={{ paddingTop: '80px', paddingBottom: '30px', backgroundColor: '#fff' }}>

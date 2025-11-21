@@ -17,7 +17,7 @@ export default function MarketingContenidos() {
       >
         <div 
           style={{
-            backgroundImage: 'url("/7.jpg")',
+            backgroundImage: 'url("/MARKETING DE CONTENIDOS.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             position: 'absolute',
@@ -35,10 +35,25 @@ export default function MarketingContenidos() {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(6, 64, 255, 0.7)',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
             zIndex: 2
           }}
         />
+        <div 
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 3,
+            textAlign: 'center',
+            color: 'white',
+            width: '90%',
+            maxWidth: '800px'
+          }}
+        >
+          <h1 className="display-4 fw-bold mb-3">Contenido que Conecta y Genera Valor</h1>
+        </div>
       </section>
 
       <section style={{ paddingTop: '80px', paddingBottom: '30px', backgroundColor: '#fff' }}>

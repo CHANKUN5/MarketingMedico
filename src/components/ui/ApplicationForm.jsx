@@ -29,8 +29,8 @@ export default function ApplicationForm({ vacancyTitle }) {
 
     if (!formData.correo.trim()) {
       newErrors.correo = 'El correo es requerido'
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.correo)) {
-      newErrors.correo = 'El correo no es válido'
+    } else if (!/^[^\s@]+@senati\.pe$/.test(formData.correo)) {
+      newErrors.correo = 'Debe ser un correo institucional de SENATI (@senati.pe)'
     }
 
     setErrors(newErrors)
