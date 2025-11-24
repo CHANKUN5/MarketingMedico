@@ -8,4 +8,6 @@ export default defineConfig({
       "@": "/src",
     },
   },
+  publicDir: "public",
+  assetsInclude: ["**/*.xml"],
 });
