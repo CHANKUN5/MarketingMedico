@@ -1,8 +1,15 @@
 {
-  "rewrites": [
+  "static": {
+    "directory": "static"
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/sitemap.xml",
+      "dest": "/static/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/static/robots.txt"
     }
   ]
 }
