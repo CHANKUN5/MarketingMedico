@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import ApplicationForm from '../../components/ui/ApplicationForm'
+import QuickNavButton from '../../components/ui/QuickNavButton'
 
 export default function DesarrolloSoftware() {
   return (
@@ -13,6 +14,7 @@ export default function DesarrolloSoftware() {
           height: '450px'
         }}
       >
+        <QuickNavButton />
         <div 
           style={{
             position: 'absolute',
