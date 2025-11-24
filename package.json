@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp public/sitemap.xml dist/sitemap.xml && cp public/robots.txt dist/robots.txt",
+    "build": "vite build && node build-sitemap.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
