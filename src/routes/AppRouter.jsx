@@ -18,6 +18,9 @@ import DesarrolloWeb from '../pages/servicios/DesarrolloWeb'
 import AnalisisDatos from '../pages/servicios/AnalisisDatos'
 import Consultoria from '../pages/servicios/Consultoria'
 import MarketingContenidos from '../pages/servicios/MarketingContenidos'
+import MarketingMedicoPeru from '../pages/SEO/MarketingMedicoPeru'
+import AgenciaMarketingMedico from '../pages/SEO/AgenciaMarketingMedico'
+import MarketingDigitalClinicas from '../pages/SEO/MarketingDigitalClinicas'
 import { pageview } from '../utils/ga'
 
 function AnalyticsTracker() {
@@ -54,6 +57,9 @@ export default function AppRouter() {
           <Route path="servicios/analisis-datos" element={<AnalisisDatos />} />
           <Route path="servicios/consultoria" element={<Consultoria />} />
           <Route path="servicios/marketing-contenidos" element={<MarketingContenidos />} />
+          <Route path="marketing-medico-peru" element={<MarketingMedicoPeru />} />
+          <Route path="agencia-marketing-medico" element={<AgenciaMarketingMedico />} />
+          <Route path="marketing-digital-clinicas" element={<MarketingDigitalClinicas />} />
         </Route>
       </Routes>
     </BrowserRouter>
