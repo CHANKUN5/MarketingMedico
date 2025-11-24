@@ -4,11 +4,13 @@ import { ArrowRight, Users, Award, Target } from 'lucide-react'
 import HeroSlider from '../../components/ui/HeroSlider'
 import ContactForm from '../../components/ui/ContactForm'
 import ServicesCarousel from '../../components/ui/ServicesCarousel'
+import SEOContent from '../../components/seo/SEOContent'
 import { services } from '../../data/services'
 
 export default function Home() {
   return (
     <>
+      <SEOContent />
       <HeroSlider />
 
       <section className="py-5 bg-white">
