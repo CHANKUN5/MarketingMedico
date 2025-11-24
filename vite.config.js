@@ -9,5 +9,20 @@ export default defineConfig({
     },
   },
   publicDir: "public",
-  assetsInclude: ["**/*.xml"],
+  assetsInclude: ["**/*.xml", "**/*.txt"],
+  build: {
+    rollupOptions: {
+      input: {
+        main: "./index.html"
+      },
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === "sitemap.xml" || assetInfo.name === "robots.txt") {
+            return "[name][extname]"
+          }
+          return "assets/[name]-[hash][extname]"
+        }
+      }
+    }
+  }
 });
