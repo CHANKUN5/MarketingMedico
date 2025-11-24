@@ -91,3 +91,41 @@
     height: 40px !important;
   }
 }
+/* Performance Optimizations */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Preload critical fonts */
+@font-face {
+  font-family: 'Satoshi';
+  font-display: swap;
+}
+
+/* Reduce layout shifts */
+.hero-section {
+  min-height: 400px;
+}
+
+/* Optimize animations */
+.practicante-img {
+  will-change: transform;
+}
+
+/* Critical CSS inlining */
+.text-primary {
+  color: #007bff !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}

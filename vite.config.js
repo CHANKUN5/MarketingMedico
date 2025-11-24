@@ -9,10 +9,22 @@ export default defineConfig({
     },
   },
   build: {
+    minify: 'terser',
+    cssMinify: true,
     rollupOptions: {
       input: {
         main: "./index.html"
+      },
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          bootstrap: ['react-bootstrap', 'bootstrap'],
+          router: ['react-router-dom']
+        }
       }
     }
+  },
+  server: {
+    compress: true
   }
 });
