@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram } from 'lucide-react'
+import { Facebook, Instagram, MessageCircle } from 'lucide-react'
 import { services } from '../../data/services'
 import { socialLinks } from '../../data/socialLinks'
 
@@ -211,6 +211,27 @@ export default function Footer() {
                 }}
               >
                 <Instagram size={24} style={{ transition: 'all 0.3s ease' }} />
+              </a>
+              <a 
+                href={socialLinks.whatsapp} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white social-icon-link"
+                style={{ transition: 'all 0.3s ease', display: 'inline-flex' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#25D366'
+                  e.currentTarget.style.transform = 'scale(1.15)'
+                  const svg = e.currentTarget.querySelector('svg')
+                  if (svg) svg.style.color = '#25D366'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'white'
+                  e.currentTarget.style.transform = 'scale(1)'
+                  const svg = e.currentTarget.querySelector('svg')
+                  if (svg) svg.style.color = 'white'
+                }}
+              >
+                <MessageCircle size={24} style={{ transition: 'all 0.3s ease' }} />
               </a>
             </div>
           </Col>
